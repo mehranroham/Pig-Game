@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+body {
+  height: 100vh;
+  background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #333;
+}
+
+.container {
+  width: 65%;
+  height: 80%;
+  background-color: #ffffff4a;
+  border-radius: 9px;
+  display: flex;
+  position: relative;
+}
+
+.player {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 90px;
+  font-size: 36px;
+  font-weight: 800;
+}
+
+.number {
+  color: #c7365f;
+  font-size: 60px;
+}
+
+.current {
+  font-size: 20px;
+}
+
+.player div {
+  background-color: #c7365f;
+  padding: 15px;
+  width: 40%;
+  height: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 15px;
+  color: #ddd;
+}
+
+.player1-div {
+  border-top-left-radius: 9px;
+  border-bottom-left-radius: 9px;
+}
+
+.player2-div {
+  border-top-right-radius: 9px;
+  border-bottom-right-radius: 9px;
+}
+
+.active-player {
+  background-color: #ffffffa5;
+  color: #c7365f;
+}
+
+.winner-player {
+  background-color: black;
+}
+
+.btn {
+  position: absolute;
+  width: 200px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50px;
+  border-radius: 50px;
+  border: none;
+  background-color: #ffffffb3;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.btn:active {
+  height: 55px;
+}
+
+.new-game {
+  top: 5%;
+}
+
+.roll-dice {
+  bottom: 20%;
+}
+
+.hold {
+  bottom: 10%;
+  width: 150px;
+}
+
+.dice {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  height: 90px;
+  bottom: 50%;
+  border-radius: 20px;
+  /* transform: rotate(10deg); */
+}
+
+.hidden {
+  display: none;
+}
